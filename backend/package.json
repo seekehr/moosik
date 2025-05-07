@@ -1,0 +1,58 @@
+{
+  "name": "moosik-backend",
+  "version": "1.0.0",
+  "description": "Backend for Moosik app.",
+  "homepage": "https://github.com/seekehr/moosik#readme",
+  
+  "bugs": {
+    "url": "https://github.com/seekehr/moosik/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seekehr/moosik.git"
+  },
+  "license": "ISC",
+  "author": "Seeker",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsc && node ./bin/www",
+    "test": "npx tsc && vitest",
+    "dev": "npx tsc && node ./bin/www"
+  },
+  "dependencies": {
+    "argon2": "^0.41.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "geoip-lite": "^1.4.10",
+    "jsonwebtoken": "^9.0.2",
+    "kysely": "^0.28.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.14.0",
+    "rate-limit-redis": "^4.2.0",
+    "redis": "^4.7.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@types/argon2": "^0.14.1",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.17",
+    "@types/debug": "^4.1.12",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.1",
+    "@types/express-session": "^1.18.1",
+    "@types/geoip-lite": "^1.4.4",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.14.1",
+    "cookie-parser": "^1.4.7",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1"
+  }
+}

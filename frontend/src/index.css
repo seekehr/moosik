@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 272 75% 74%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 272 75% 74%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 276 59% 72%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-spotify-black text-spotify-white antialiased;
+  }
+  
+  .gradient-overlay {
+    background: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, rgb(18, 18, 18) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+  }
+}
+
+@layer components {
+  .btn-spotify {
+    @apply bg-spotify-purple hover:bg-spotify-darkPurple text-white 
+           font-semibold py-3 px-6 rounded-full transition-all 
+           duration-200 focus:outline-none focus:ring-2 
+           focus:ring-spotify-purple focus:ring-opacity-50;
+  }
+  
+  .link-input {
+    @apply bg-spotify-darkgray text-spotify-white border-none rounded-full
+           px-6 py-3 w-full focus:outline-none focus:ring-2 
+           focus:ring-spotify-purple placeholder:text-spotify-lightgray;
+  }
+}
