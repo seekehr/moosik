@@ -14,3 +14,9 @@ backend/.env.development.local
 backend/.env.test.local
 backend/.env.production.local
 
+# Playwright
+backend/node_modules/
+backend/test-results/
+backend/playwright-report/
+backend/blob-report/
+backend/playwright/.cache/

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Backend for Moosik app.",
   "homepage": "https://github.com/seekehr/moosik#readme",
-  
   "bugs": {
     "url": "https://github.com/seekehr/moosik/issues"
   },
@@ -38,6 +37,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
+    "@playwright/test": "^1.52.0",
     "@types/argon2": "^0.14.1",
     "@types/cookie-parser": "^1.4.8",
     "@types/cors": "^2.8.17",
